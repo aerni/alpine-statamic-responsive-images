@@ -3,7 +3,9 @@
 ![License](https://img.shields.io/github/license/aerni/alpine-statamic-responsive-images?style=flat-square)
 
 # Alpine Statamic Responsive Images
-This Alpine plugin replaces the inline script of the Statamic Responsive Images addon with a simple to use `x-statamic-responsive-images` directive. Using this directive resolves the issue of images not loading on subsequent page loads when using Statamic Responsive Images together with Laravel Livewire or pjax libraries like Swup, BarbaJS, and Turbolinks.
+This Alpine plugin replaces the inline script of the Statamic Responsive Images addon with a simple to use `x-statamic-responsive-images` directive. Using this directive resolves the issue of images not loading on subsequent page loads when using Statamic Responsive Images together with Laravel Livewire or pjax libraries like Swup, BarbaJS, and Turbolinks. 
+
+You can also use this plugin if you simply like the idea of using a nice Alpine directive instead of the inline script in the `responsiveImage.blade.php` view.
 
 This addon has been tested with `v3.12.2` of Statamic Responsive Images.
 
@@ -11,7 +13,7 @@ This addon has been tested with `v3.12.2` of Statamic Responsive Images.
 You can use this plugin by either including it from a `<script>` tag or installing it via NPM:
 
 ### Via CDN
-You can include the CDN build of this plugin as a `<script>` tag, just make sure to include it BEFORE Alpine's core JS file.
+You can include the CDN build of this plugin as a `<script>` tag, just make sure to include it before Alpine's core script.
 
 ```html
 <!-- Alpine Resize -->
@@ -22,13 +24,13 @@ You can include the CDN build of this plugin as a `<script>` tag, just make sure
 ```
 
 ### Via NPM
-You can install Resize from NPM for use inside your bundle like so:
+You can install this plugin via NPM for use inside your bundle:
 
 ```
 npm install @aerni/alpine-statamic-responsive-images
 ```
 
-Then initialize it from your bundle:
+Then initialize it in your bundle:
 
 ```js
 import Alpine from 'alpinejs'
