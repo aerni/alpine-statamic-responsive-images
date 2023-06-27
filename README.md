@@ -40,7 +40,7 @@ Alpine.plugin(statamicResponsiveImages)
 ```
 
 ## Usage
-Replace the `data-statamic-responsive-images` attribute with `x-data` and `x-statamic-responsive-images`. Then delete the original inline script.
+Delete the original inline script and replace the `data-statamic-responsive-images` attribute with `x-data` and `x-statamic-responsive-images`. 
 
 ```diff
 - @once
