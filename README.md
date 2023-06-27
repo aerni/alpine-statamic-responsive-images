@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/github/license/aerni/alpine-statamic-responsive-images?style=flat-square)
 
 # Alpine Statamic Responsive Images
-This Alpine plugin replaces the inline script of the Statamic Responsive Images addon with a simple to use `x-statamic-responsive-images` directive. Using this directive resolves the issue of images not loading on subsequent page loads when using Statamic Responsive Images together with Laravel Livewire or pjax libraries like Swup, BarbaJS, and Turbolinks. 
+This Alpine plugin replaces the inline script of the Statamic Responsive Images addon with a simple to use `x-statamic-responsive-images` directive. Using this directive resolves the issue of images not loading on subsequent page loads when using Statamic Responsive Images together with Laravel Livewire or pjax libraries like Swup, BarbaJS, and Turbolinks.
 
 You can also use this plugin if you simply like the idea of using a nice Alpine directive instead of the inline script in the `responsiveImage.blade.php` view.
 
@@ -40,7 +40,7 @@ Alpine.plugin(statamicResponsiveImages)
 ```
 
 ## Usage
-Replace the `data-statamic-responsive-images` attribute with `x-statamic-responsive-images` and delete the original inline script.
+Replace the `data-statamic-responsive-images` attribute with `x-data` and `x-statamic-responsive-images`. Then delete the original inline script.
 
 ```diff
 - @once
@@ -91,6 +91,7 @@ Replace the `data-statamic-responsive-images` attribute with `x-statamic-respons
         @isset($height) height="{{ $height }}" @endisset
         @if($hasSources)
 -        data-statamic-responsive-images
++        x-data
 +        x-statamic-responsive-images
         @endif
     >

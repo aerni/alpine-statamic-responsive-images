@@ -1,7 +1,7 @@
 {
     "name": "@aerni/alpine-statamic-responsive-images",
     "description": "An Alpine implementation of the Statamic Responsive Images script.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Michael Aerni",
         "email": "hello@michaelaerni.ch",

@@ -4,7 +4,7 @@ export default function (Alpine) {
             const observer = new ResizeObserver(entries => {
                 entries.forEach(entry => {
                     el.parentNode.querySelectorAll('source').forEach(source => {
-                        source.sizes = Math.ceil(el.parentNode.getBoundingClientRect().width / window.innerWidth * 100) + 'vw'
+                        source.sizes = Math.ceil(el.getBoundingClientRect().width / window.innerWidth * 100) + 'vw'
                     })
                 })
             })
