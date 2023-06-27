@@ -7,7 +7,7 @@ This Alpine plugin replaces the inline script of the Statamic Responsive Images 
 
 You can also use this plugin if you simply like the idea of using a nice Alpine directive instead of the inline script in the `responsiveImage.blade.php` view.
 
-This addon has been tested with `v3.12.2` of Statamic Responsive Images.
+This addon has been tested with `v4.0.3` of Statamic Responsive Images.
 
 ## Installation
 You can use this plugin by either including it from a `<script>` tag or installing it via NPM:
